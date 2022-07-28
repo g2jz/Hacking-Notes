@@ -1,27 +1,27 @@
-# Cracking WiFi Passwords
+<!-- omit in toc -->
+# Cracking WiFi
 
+<!-- omit in toc -->
 ## Table of Contents
 
-1. [Cracking WiFi Passwords](#cracking-wifi-passwords)
-   1. [Table of Contents](#table-of-contents)
-   2. [Validate Handshake with Pyrit](#validate-handshake-with-pyrit)
-   3. [Traditional Cracking](#traditional-cracking)
-      1. [John (.hccap)](#john-hccap)
-      2. [Hashcat (.hccapx)](#hashcat-hccapx)
-      3. [Aircrack (.cap)](#aircrack-cap)
-      4. [Pyrit (.cap)](#pyrit-cap)
-      5. [Cowpatty (.cap)](#cowpatty-cap)
-   4. [Precomputed Password Cracking](#precomputed-password-cracking)
-      1. [Fundamentals](#fundamentals)
-      2. [Aircrack](#aircrack)
-      3. [Genpmk](#genpmk)
-         1. [Pyrit](#pyrit)
-         2. [Cowpatty](#cowpatty)
-         3. [Aircrack (Conversion)](#aircrack-conversion)
-      4. [Pyrit BBDD Attack](#pyrit-bbdd-attack)
-   5. [Rainbow tables](#rainbow-tables)
-      1. [Fundamentals](#fundamentals-1)
-      2. [Online Resources](#online-resources)
+1. [Validate Handshake with Pyrit](#validate-handshake-with-pyrit)
+2. [Traditional Cracking](#traditional-cracking)
+   1. [John (.hccap)](#john-hccap)
+   2. [Hashcat (.hccapx)](#hashcat-hccapx)
+   3. [Aircrack (.cap)](#aircrack-cap)
+   4. [Pyrit (.cap)](#pyrit-cap)
+   5. [Cowpatty (.cap)](#cowpatty-cap)
+3. [Precomputed Password Cracking](#precomputed-password-cracking)
+   1. [Fundamentals](#fundamentals)
+   2. [Aircrack](#aircrack)
+   3. [Genpmk](#genpmk)
+      1. [Pyrit](#pyrit)
+      2. [Cowpatty](#cowpatty)
+      3. [Aircrack (Conversion)](#aircrack-conversion)
+   4. [Pyrit BBDD Attack](#pyrit-bbdd-attack)
+4. [Rainbow tables](#rainbow-tables)
+   1. [Fundamentals](#fundamentals-1)
+   2. [Online Resources](#online-resources)
 
 <br>
 
