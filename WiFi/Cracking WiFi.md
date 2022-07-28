@@ -23,6 +23,8 @@
       1. [Fundamentals](#fundamentals-1)
       2. [Online Resources](#online-resources)
 
+<br>
+
 ## Validate Handshake with Pyrit
 
 ```bash
@@ -33,6 +35,8 @@ Two posible answers:
 
 - No valid EAOPL-Handshake.
 - Valid Handshakes (ESSID and Clients).
+
+<br>
 
 ## Traditional Cracking
 
@@ -111,6 +115,8 @@ Finally, with raw *.cap* files, we can use *Cowpatty* too. Slower than *John*, *
 ```bash
 cowpatty -f rockyou.txt -r Handshake.cap -s ESSID
 ```
+
+<br>
 
 ## Precomputed Password Cracking
 
@@ -245,6 +251,8 @@ Lastly, we are going to perform the cracking stage:
 ```bash
 pyrit -r Handshake.cap attack_db
 ```
+
+<br>
 
 ## Rainbow tables
 
