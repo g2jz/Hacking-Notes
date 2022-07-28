@@ -23,8 +23,6 @@
       1. [Fundamentals](#fundamentals-1)
       2. [Online Resources](#online-resources)
 
-<br>
-
 ## Validate Handshake with Pyrit
 
 ```bash
@@ -35,8 +33,6 @@ Two posible answers:
 
 - No valid EAOPL-Handshake.
 - Valid Handshakes (ESSID and Clients).
-
-<br>
 
 ## Traditional Cracking
 
@@ -68,8 +64,6 @@ View cracked hash:
 john --show --format=wpapsk HandshakeHash
 ```
 
-<br>
-
 ### Hashcat (.hccapx)
 
 The main benefit of using Hashcat is that the cracking process can be made with GPU. This will make the process way faster.
@@ -94,8 +88,6 @@ Finally, to view the cracked password:
 hashcat --show -m 2500 Handshake.hccapx
 ```
 
-<br>
-
 ### Aircrack (.cap)
 
 We can use *aircrack-ng* if we want to use the raw *.cap* file. This will be considerably slower than the *Jhon* method.
@@ -103,8 +95,6 @@ We can use *aircrack-ng* if we want to use the raw *.cap* file. This will be con
 ```bash
 aircrack-ng -w rockyou.txt Handshake.cap
 ```
-
-<br>
 
 ### Pyrit (.cap)
 
@@ -114,8 +104,6 @@ We can use *Pyrit* too, for this porpouse. Considerably slower than *Jhon* too.
 pyrit -e ESSID -i rockyou.txt -r Handshake.cap attack_passthrough
 ```
 
-<br>
-
 ### Cowpatty (.cap)
 
 Finally, with raw *.cap* files, we can use *Cowpatty* too. Slower than *John*, *Aircrack* and *Pyrit*.
@@ -123,8 +111,6 @@ Finally, with raw *.cap* files, we can use *Cowpatty* too. Slower than *John*, *
 ```bash
 cowpatty -f rockyou.txt -r Handshake.cap -s ESSID
 ```
-
-<br>
 
 ## Precomputed Password Cracking
 
@@ -143,8 +129,6 @@ With a Pairwise Master Keys (PMKs) wordlist the steps made for each password are
 - True/False.
 
 This obviously accelerates the process of cracking and we can achieve very good cracking speeds even with low computational resources.
-
-<br>
 
 ### Aircrack
 
@@ -200,8 +184,6 @@ aircrack-ng -r PMKsWordlist Handshake.cap
 
 This method is very fast compared to traditional cracking, but with other tools like *Cowpatty* or *Pyrit* speed can be improved.
 
-<br>
-
 ### Genpmk
 
 We have seen how to create the PMKs wordlist with the *aircrack-ng* suite, now we are going to see a tool called *Genpmk*. This tool allows us to create a PMKs wordlist that can be used with various tools.
@@ -211,8 +193,6 @@ To create the PMKs wordlist we will use the following command:
 ```bash
 genpmk -f rockyou.txt -d dic.genpmk -s ESSID
 ```
-
-<br>
 
 #### Pyrit
 
@@ -224,8 +204,6 @@ To crack the *.cap* file with our PMKs wordlist we will do the following:
 pyrit -i dic.genpmk -e ESSID -r Handshake.cap attack_cowpatty
 ```
 
-<br>
-
 #### Cowpatty
 
 Altenatively, we can crack the password using the wordlist generated with *Genpmk* and the *Cowpatty* tool. This tools will not have as good results as *Pyrit*, but when compared with other methods it can be pretty fast.
@@ -234,8 +212,6 @@ Altenatively, we can crack the password using the wordlist generated with *Genpm
 cowpatty -d dic.genpmk -r Handshake.cap -s ESSID
 ```
 
-<br>
-
 #### Aircrack (Conversion)
 
 We have explained how to create a PMKs wordlist with *airolib* and how to crack it with *aircrack-ng*. Alternatively *airolib-ng* offers the feature to generate its own format PMKs wordlist on the basis of *Genpmk* generated wordlist. To do this, we will use the following command:
@@ -243,8 +219,6 @@ We have explained how to create a PMKs wordlist with *airolib* and how to crack 
 ```bash
 airolib-ng PMKsWordlist --import cowpatty dic.genpmk
 ```
-
-<br>
 
 ### Pyrit BBDD Attack
 
@@ -272,8 +246,6 @@ Lastly, we are going to perform the cracking stage:
 pyrit -r Handshake.cap attack_db
 ```
 
-<br>
-
 ## Rainbow tables
 
 ### Fundamentals
@@ -289,5 +261,3 @@ This resources are:
 - [CrackStation](https://crackstation.net/)
 - [Hashes.com](https://hashes.com/en/decrypt/hash)
 - [HashKiller](https://hashkiller.io/)
-
-<br>
