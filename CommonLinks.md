@@ -19,3 +19,4 @@
 [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)
 [Burpsuite](https://portswigger.net/burp/communitydownload)
 [winPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS)
+[SecLists](https://github.com/danielmiessler/SecLists)
