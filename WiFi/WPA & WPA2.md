@@ -32,7 +32,7 @@ To remediate this WPA2 protocol was created. This protocol uses the AES encrypti
 
 To summarize, a brief comparison between protocols:
 
-![Protocol Comparison](../Images/WiFi/WiFi%20Protocol%20Comparison.png)
+![Protocol Comparison](../Images/WiFi/WPA%20%26%20WPA2/WiFi%20Protocol%20Comparison.png)
 
 ### Handshake
 
@@ -40,7 +40,7 @@ The only packets that contain useful information and can be used to crack the pa
 
 The complete sequence is described below:
 
-![4-Way Handshake](../Images/WiFi/4-way-handshake.png)
+![4-Way Handshake](../Images/WiFi/WPA%20%26%20WPA2/4-way-handshake.png)
 
 It is important to emphasize that this sequence of packets is exchanged between the client and the AP in every reconnection. That is why deauthentication attacks are made to force the reconnection from the clients and the subsequent capture of the EAPOL.
 
@@ -127,7 +127,7 @@ This command will disable the monitor mode as such and then it will restart the 
 
 It is important to stay as undetectable as possible while capturing and sending network packages, as we always leave a trace, the MAC address. This address is used to uniquely identify every network adapter in the word. This address consists in 6 bytes. The first 3 bytes are called OUI (Organizationally Unique Identifier) and identify the organization behind the adapter. The last 3 bytes identify each unique adapter. We can see this in the following image:
 
-![Mac Address](../Images/WiFi/MAC%20Address.png)
+![Mac Address](../Images/WiFi/WPA%20%26%20WPA2/MAC%20Address.png)
 
 This address can be changed with a tool called **MacChanger**.
 
