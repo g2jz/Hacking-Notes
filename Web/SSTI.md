@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# Template Injection
+# SSTI (Server-Side Template Injection)
 
 <!-- omit in toc -->
 ## Table of Contents
