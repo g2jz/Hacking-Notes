@@ -109,15 +109,19 @@ smblient -U "domain.local\user%password" -L 10.10.10.1
 smblient -U "domain.local\user%password" //10.10.10.1/Shared
 ```
 
+#### Get Every File in a Directory
 
+```bash
+smb> prompt off
 
-prompt off
+smb> mget *
+```
 
-mget *
+#### CME
 
-
-
+```bash
 cme smb 10.10.10.1 -u 'user' -p 'password' --shares
+```
 
 
 
