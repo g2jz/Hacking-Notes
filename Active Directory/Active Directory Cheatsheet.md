@@ -103,6 +103,12 @@ cme {smb, winrm, ssh, ldap, mssql} 10.10.10.0/24
 smblient -U "domain.local\user%password" -L 10.10.10.1
 ```
 
+##### CME
+
+```bash
+cme smb 10.10.10.1 -u 'user' -p 'password' --shares
+```
+
 ### Access Shared Resource
 
 ```bash
@@ -117,12 +123,17 @@ smb> prompt off
 smb> mget *
 ```
 
-#### CME
+#### Mount Share
 
 ```bash
-cme smb 10.10.10.1 -u 'user' -p 'password' --shares
+mount -t cifs '//10.10.10.1/Share' /mnt/Share
 ```
 
+#### Show File Permissions
+
+```bash
+smbcacls '//10.10.10.1/Share' /mnt/Share/file
+```
 
 
 ### RPC
