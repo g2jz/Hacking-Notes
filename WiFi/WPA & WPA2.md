@@ -4,17 +4,17 @@
 <!-- omit in toc -->
 ## Table of Contents
 
-1. [Fundamentals](#fundamentals)
-	1. [Improvements Over WEP](#improvements-over-wep)
-	2. [Handshake](#handshake)
-2. [Capture](#capture)
-	1. [Network Card Configuration](#network-card-configuration)
-	2. [Monitor Mode](#monitor-mode)
-	3. [MAC Address](#mac-address)
-	4. [Standalone Capture](#standalone-capture)
-	5. [Capture Filters](#capture-filters)
-	6. [Export Packet Captures](#export-packet-captures)
-	7. [Treat and Clean Packet Captures](#treat-and-clean-packet-captures)
+- [Fundamentals](#fundamentals)
+	- [Improvements Over WEP](#improvements-over-wep)
+	- [Handshake](#handshake)
+- [Capture](#capture)
+	- [Network Card Configuration](#network-card-configuration)
+	- [Monitor Mode](#monitor-mode)
+	- [MAC Address](#mac-address)
+	- [Standalone Capture](#standalone-capture)
+	- [Capture Filters](#capture-filters)
+	- [Export Packet Captures](#export-packet-captures)
+	- [Treat and Clean Packet Captures](#treat-and-clean-packet-captures)
 
 ## Fundamentals
 
